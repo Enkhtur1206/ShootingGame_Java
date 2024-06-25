@@ -20,12 +20,17 @@ public class Player extends Character implements KeyListener {
 			GameWorld.playerBullets.add(
 					new PlayerBullet(x,y,0,-10));
 		}
+		if (e.getKeyCode()==KeyEvent.VK_ENTER) {
+			System.out.println("ENTERキーが押されました");
+			GameWorld.enterPressed=true;
+		}
 	}
 	
 	public void keyTyped(KeyEvent e) {
 		
 		
 	}
+	
 
 public void move() {
 	super.move();
