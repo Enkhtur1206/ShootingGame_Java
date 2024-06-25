@@ -17,10 +17,10 @@ public class GameFrame extends MyFrame {
 				if (Math.abs(e.x-GameWorld.player.x)<=30 &&
 					Math.abs(e.y-GameWorld.player.y)<=30) {
 						System.out.println("やられた!");
+						GameWorld.player.y=-1000;
+						GameWorld.player.y = -1000;
 				}
 			}
-			
-			
      		sleep(0.03);
 		}
 	} 
