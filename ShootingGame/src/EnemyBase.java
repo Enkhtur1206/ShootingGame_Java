@@ -6,7 +6,7 @@ public class EnemyBase extends Enemy {
 		f.setColor(200, 200, 200);
 		f.fillOval(x-16, y+8, 64, 16);
 	}
-	public EnemyBase(double x, double vx, double y, double vy) {
+	public EnemyBase(double x, double y, double vx, double vy) {
 		super(x,y,vx,vy); 
 	}
 public void move () {
