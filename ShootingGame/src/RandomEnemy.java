@@ -6,7 +6,7 @@ public class RandomEnemy extends Enemy {
 
 	public void move() {
 		super.move();
-		vx = Math.random() * 4 - 2;
+		vx = Math.random() * 4 + 2;
 	}
 	public void draw(MyFrame f) {
 		f.setColor(0, 200, 0);
@@ -15,3 +15,9 @@ public class RandomEnemy extends Enemy {
 		f.fillRect(x + 10, y + 20, 10, 10);
 	}
 }
+
+
+
+
+
+
